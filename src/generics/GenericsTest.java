@@ -56,15 +56,30 @@ public class GenericsTest {
 
         List<Fruit> fruits = new ArrayList<>();
         fruits.add(new Apple()) ;
-        fruits.add(new Orange()) ;
+        fruits.add(new Banana()) ;
         FruitHelper fruitHelper = new FruitHelper() ;
         fruitHelper.addApple(fruits);
         fruitHelper.eatAll(fruits);
 
 
-        Collection<Orange> oranges = new ArrayList<>() ;
-        oranges.add(new Orange());
-        fruitHelper.eatAll(oranges);
+        Collection<Banana> bananas = new ArrayList<>() ;
+        bananas.add(new Banana());
+        fruitHelper.eatAll(bananas);
+//        fruitHelper.addApple(bananas);
+
+        Collection<Apple> apples = new ArrayList<>() ;
+        fruitHelper.addApple(apples);
+        apples.add(new GrannySmith());
+        fruitHelper.eatAll(apples);
+
+        Collection<GrannySmith> grannySmithApples = new ArrayList<>() ;
+//        fruitHelper.addApple(grannySmithApples);
+        fruitHelper.eatAll(grannySmithApples);
+
+        Collection<Object> objects = new ArrayList<>() ;
+        fruitHelper.addApple(objects);
+
+
 
 //        Collection
 

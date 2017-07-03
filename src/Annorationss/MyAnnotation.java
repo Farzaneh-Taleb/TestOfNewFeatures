@@ -35,3 +35,35 @@ import java.lang.annotation.Target;
     boolean param2() ;
     int[] param3() ;
 }
+
+
+/*    ElementType	target	example usage on target element
+        ANNOTATION_TYPE	annotation types
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyAnnotation
+CONSTRUCTOR	constructors
+        @MyAnnotation
+        public MyClass() {}
+        FIELD	fields, enum constants
+        @XmlAttribute
+        private int count;
+        LOCAL_VARIABLE	variable declarations inside methods
+        for (@LoopVariable int i = 0; i < 100; i++) {
+@Unused
+    String resultVariable;
+            }
+            PACKAGE	package (in package-info.java)
+@Deprecated
+package very.old;
+        METHOD	methods
+@XmlElement
+public int getCount() {...}
+        PARAMETER	method/constructor parameters
+public Rectangle(
+@NamedArg("width") double width,
+@NamedArg("height") double height) {
+        ...
+        }
+        TYPE	classes, interfaces, enums
+@XmlRootElement
+public class Report {}*/

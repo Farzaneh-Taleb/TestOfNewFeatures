@@ -41,6 +41,11 @@ public class CrazyStrings {
             modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
             field.set(null, true);
 
+
+
+
+
+
         } catch (NoSuchFieldException |IllegalAccessException e) {
             e.printStackTrace();
         }

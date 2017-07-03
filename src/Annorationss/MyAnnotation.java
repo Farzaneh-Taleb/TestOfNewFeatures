@@ -67,3 +67,13 @@ public Rectangle(
         TYPE	classes, interfaces, enums
 @XmlRootElement
 public class Report {}*/
+
+
+
+   /* The annotation processor
+        The SetterProcessor class is used by the compiler to process the annotations.
+        It checks, if the methods annotated with the @Setter annotation are public,
+        non-static methods with a name starting with set and having a uppercase letter as 4th letter.
+        If one of these conditions isn't met, a error is written to the  Messager. The compiler writes this to stderr,
+        but other tools could use this information differently.
+        E.g. the NetBeans IDE allows the user specify annotation processors that are used to display error messages in the editor.*/
